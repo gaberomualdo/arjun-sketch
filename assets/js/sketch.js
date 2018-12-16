@@ -1,6 +1,5 @@
 var sketchColor = "#000000";
 
-
 $(function(){
   var sketchColorPicker = $('#colorPicker');
   sketchColorPicker.tinycolorpicker();
@@ -9,3 +8,7 @@ $(function(){
     sketchColor = (sketchColorPicker.data("plugin_tinycolorpicker").colorHex);
   });
 });
+
+var canvas = document.querySelector("div.container > canvas");
+canvas.width = canvas.offsetWidth;
+canvas.height = (canvas.width / 4) * 3;

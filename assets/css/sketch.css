@@ -27,8 +27,10 @@ div.container > canvas {
 div.toolbar {
   width: 100%;
   display: block;
-  height: 40px;
+  min-height: 40px;
+  overflow: auto;
   padding: 4px;
+  padding-top: 0;
   box-sizing: border-box;
   border: 1px solid #ccc;
 }
@@ -36,6 +38,7 @@ div.toolbar div.left, div.toolbar div.right {
   display: block;
   float: left;
   height: 30px;
+  padding-top: 4px;
 }
 div.toolbar div.right {
   float: right;
@@ -71,4 +74,9 @@ div.toolbar div.right button:hover {
 }
 div.toolbar div.right button:nth-child(2) {
   margin-right: 4px;
+}
+@media (max-width: 400px) {
+  div.toolbar div.right button span {
+    display: none;
+  }
 }
