@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arjun Sketch</title>
+
+  <link rel="stylesheet" href="assets/tinycolorpicker/tinycolorpicker.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/sketch.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <h1>Arjun Sketch</h1>
+      <p>A simple online sketching tool, named after the greatest artist to ever live.</p>
+    </div>
+    <canvas></canvas>
+    <div class="toolbar">
+      <div class="left">
+        <div class="color">
+          <strong>color:</strong>
+          <div id="colorPicker">
+            <a class="color"><div class="colorInner"></div></a>
+            <div class="track"></div>
+            <ul class="dropdown"><li></li></ul>
+            <input type="hidden" class="colorInput">
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <button class="download">download sketch</button>
+        <button class="clear">clear sketch</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="assets/tinycolorpicker/jquery.tinycolorpicker.js"></script>
+  <script src="assets/js/sketch.js"></script>
+</body>
+</html>

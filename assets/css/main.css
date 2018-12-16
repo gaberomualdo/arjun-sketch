@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+}
+body {
+  text-align: center;
+}
+input, button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+div.container {
+  text-align: left;
+  display: inline-block;
+  width: 550px;
+}
+@media (max-width: 550px) {
+  div.container {
+    width: calc(100% - 2rem);
+  }
+}

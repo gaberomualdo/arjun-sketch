@@ -1,0 +1,74 @@
+div.container {
+  padding: 50px 0;
+}
+div.logo {
+  display: block;
+  overflow: auto;
+  margin-bottom: 0.5rem;
+}
+div.logo h1 {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+div.logo p {
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.5;
+}
+div.container > canvas {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+  cursor: crosshair;
+  box-sizing: border-box;
+}
+div.toolbar {
+  width: 100%;
+  display: block;
+  height: 40px;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+div.toolbar div.left, div.toolbar div.right {
+  display: block;
+  float: left;
+  height: 30px;
+}
+div.toolbar div.right {
+  float: right;
+}
+div.toolbar div.left div.color strong {
+  height: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding: 0 5px;
+  width: 70px;
+  float: left;
+  display: block;
+}
+div.toolbar div.left div.color div#colorPicker {
+  display: block;
+  float: left;
+  clear: none;
+}
+div.toolbar div.right button {
+  display: block;
+  float: right;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 30px;
+  line-height: 32px;
+  padding: 0 7.5px;
+  background-color: #EFEFEF;
+  cursor: pointer;
+}
+div.toolbar div.right button:hover {
+  background-color: #ccc;
+}
+div.toolbar div.right button:nth-child(2) {
+  margin-right: 4px;
+}
