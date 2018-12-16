@@ -52,11 +52,7 @@ function drawPixel(coords){
   context.fillStyle = sketchColor;
   context.beginPath();
   console.log(sketchColor);
-  if(sketchColor == "#FFFFFF") {
-    context.arc(coords[0],coords[1],15,0, 2 * Math.PI);
-  }else{
-    context.arc(coords[0],coords[1],5,0, 2 * Math.PI);
-  }
+  context.arc(coords[0],coords[1],$("div.toolbar div.left > select").val() / 2,0, 2 * Math.PI);
   context.fill();
 
   var d = new Date();
@@ -68,10 +64,7 @@ function drawPixel(coords){
     previousSketchTimeAndCoords = sketchTimeAndCoords;
   }else{
     context.strokeStyle = sketchColor;
-    context.lineWidth = 10;
-    if(sketchColor == "#FFFFFF") {
-      context.lineWidth = 30;
-    }
+    context.lineWidth = $("div.toolbar div.left > select").val();
     context.beginPath();
     context.moveTo(previousSketchTimeAndCoords.coords[0], previousSketchTimeAndCoords.coords[1]);
     context.lineTo(sketchTimeAndCoords.coords[0], sketchTimeAndCoords.coords[1]);

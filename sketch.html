@@ -22,14 +22,21 @@
     <canvas></canvas>
     <div class="toolbar">
       <div class="left">
-        <div class="color">
-          <strong>color:</strong>
-          <div id="colorPicker">
-            <a class="color"><div class="colorInner"></div></a>
-            <div class="track"></div>
-            <ul class="dropdown"><li></li></ul>
-            <input type="hidden" class="colorInput">
-          </div>
+        <select>
+          <option value="1">Stroke Width: 1px</option>
+          <option value="5">Stroke Width: 5px</option>
+          <option value="10" selected>Stroke Width: 10px</option>
+          <option value="20">Stroke Width: 20px</option>
+          <option value="30">Stroke Width: 30px</option>
+          <option value="40">Stroke Width: 40px</option>
+          <option value="50">Stroke Width: 50px</option>
+          <option value="100">Stroke Width: 100px</option>
+        </select>
+        <div id="colorPicker">
+          <a class="color"><div class="colorInner"></div></a>
+          <div class="track"></div>
+          <ul class="dropdown"><li></li></ul>
+          <input type="hidden" class="colorInput">
         </div>
       </div>
       <div class="right">

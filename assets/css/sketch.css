@@ -42,7 +42,8 @@ div.toolbar div.left, div.toolbar div.right {
 div.toolbar div.right {
   float: right;
 }
-div.toolbar div.left div.color strong {
+div.toolbar div.left strong {
+  font-size: 1rem;
   height: 30px;
   line-height: 32px;
   text-transform: uppercase;
@@ -51,7 +52,25 @@ div.toolbar div.left div.color strong {
   float: left;
   display: block;
 }
-div.toolbar div.left div.color div#colorPicker {
+div.toolbar div.left > div, div.toolbar div.left > select {
+  float: left;
+  display: block;
+  margin-right: 4px;
+}
+div.toolbar div.left > select {
+  padding: 0 5px;
+  outline: none;
+  font-size: 1rem;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  background: #EFEFEF;
+  background-image: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+div.toolbar div.left div#colorPicker {
   display: block;
   float: left;
   clear: none;
